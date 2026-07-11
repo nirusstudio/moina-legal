@@ -40,11 +40,11 @@
     }
     p, li { font-size: 14.5px; color: #3a3a36; }
     ul, ol { padding-left: 18px; margin: 6px 0; }
-    .toggle { display: flex; gap: 8px; margin: 0 0 18px; }
+    .toggle { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
     .toggle button {
       font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
       border: 1px solid var(--line); background: #fff; color: var(--muted);
-      border-radius: 999px; padding: 5px 14px;
+      border-radius: 999px; padding: 5px 14px; white-space: nowrap;
     }
     .toggle button.active { background: var(--sage); color: #fff; border-color: var(--sage); }
     [data-lang] { display: none; }

@@ -45,11 +45,11 @@
     th, td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
     th { background: #f0f3f0; font-weight: 700; }
     .placeholder { color: #b8860b; }
-    .toggle { display: flex; gap: 8px; margin: 0 0 18px; }
+    .toggle { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
     .toggle button {
       font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
       border: 1px solid var(--line); background: #fff; color: var(--muted);
-      border-radius: 999px; padding: 5px 14px;
+      border-radius: 999px; padding: 5px 14px; white-space: nowrap;
     }
     .toggle button.active { background: var(--sage); color: #fff; border-color: var(--sage); }
     [data-lang] { display: none; }
